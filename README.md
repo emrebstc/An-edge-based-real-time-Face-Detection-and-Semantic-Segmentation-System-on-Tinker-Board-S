@@ -1,6 +1,6 @@
 Hardware Specifications of ASUS Tinker Board S
 ----------------------------------------------
-CPU: Rockchip Quad-core 32Bit ARM Cortex-A17, up to 1.8 GHz RK3288 processor (SoC) 
+CPU: Rockchip Quad-core 32Bit ARMv7 Cortex-A17, up to 1.8 GHz RK3288 processor (SoC) 
 
 Memory: 2GB Dual Channel DDR3 
 
@@ -13,8 +13,59 @@ USB Ports: 4 x USB 2.0
 
 Configuration
 -------------
-OS : Armbian Bookworm 25.8.1
+OS : Armbian Bookworm 25.8.2 (headless, no GUI)
+
 Download Link: https://www.armbian.com/tinkerboard/
+
+Kernel: Linux tinkerboard 6.12.55-current-rockchip #1 SMP armv7l 
+
+Python Version: 3.11.2
+
+Flask Version: 3.1.2 
+
+Tflite-runtime Version: 2.14.0
+
+Numpy Version: 1.24.2
+
+OpenCV Version: 4.6.0 (headless)
+
+
+Devices
+-------
+Camera: USB UVC-compatible camera (e.g. /dev/video0 or /dev/video1)
+
+Resolution: 640×480 @ 30 FPS
+
+Backend: V4L2, v4l2-ctl 1.22.1 
+
+
+Network & Access
+----------------
+Flask Web Stream: http://<TINKER_IP>:5000
+
+Gallery Page: http://<TINKER_IP>:5000/gallery
+
+Port: 5000 (TCP)
+
+Access via LAN browser
+
+
+Filesystem
+----------
+Segmented image save directory: /root/segments
+
+Auto-created if not exists
+
+Saved images format: .jpg
+
+Naming: segment_001.jpg, segment_002.jpg, …
+
+
+Model	Type	Path	Description
+-----------------------------
+res10_300x300_ssd_iter_140000.caffemodel	Detection	/root/res10_300x300_ssd_iter_140000.caffemodel	SSD Face Detection (OpenCV, 32-bit compatible)
+deploy.prototxt	Detection config	/root/deploy.prototxt	Caffe prototxt config for SSD
+
 
 
 
