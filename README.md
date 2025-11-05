@@ -97,7 +97,7 @@ Executing the program
 
 5) Edit, cap = cv2.VideoCapture("/dev/video0", cv2.CAP_V4L2) on det_seg_gallery.py
    
-6) for c in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > $c, done
+6) To keep the CPU frequency at maximum, Type on terminal: for c in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > $c, done
    
 7) python3 det_seg_gallery.py
    
