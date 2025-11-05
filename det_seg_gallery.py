@@ -28,7 +28,7 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 segment_counter = 1
 
 #Kamera ayarlari
-cap = cv2.VideoCapture("/dev/video5", cv2.CAP_V4L2)
+cap = cv2.VideoCapture("/dev/video0", cv2.CAP_V4L2)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 cap.set(cv2.CAP_PROP_FPS, 30)
@@ -77,7 +77,7 @@ def detect_faces(frame):
                     print(f"Segment kaydedildi: {save_path}")
                     segment_counter += 1
                 except Exception as e:
-                    print("Segmentasyon hatası:", e)
+                    print("Segmentasyon hatasi:", e)
 
             # Cerceve cizme
             cv2.rectangle(frame, (startX, startY), (endX, endY), (0, 255, 255), 2)
@@ -113,9 +113,9 @@ def gallery():
     <html>
         <head><title>Segmentasyon Galerisi</title></head>
         <body style='background:#111;color:#eee;text-align:center;'>
-            <h2>Segmentasyon Sonuçları</h2>
-            <a href='/'>Canlı Yayına Dön</a><br><br>
-            {images_html if images_html else "<p>Henüz segment kaydı yok.</p>"}
+            <h2>Segmentasyon Sonuclari</h2>
+            <a href='/'>Yayina Don</a><br><br>
+            {images_html if images_html else "<p>Henuz segmentasyon kaydi yok.</p>"}
         </body>
     </html>
     """
@@ -126,9 +126,10 @@ def serve_segments(filename):
     return send_from_directory(SAVE_DIR, filename)
 
 if __name__ == "__main__":
-    print("SD Face Detection + Semantic Segmentation Sunucusu Baslatıldı")
-    print("Canlı yayın icin: http://<TINKER_IP>:5000")
+    print("SD Face Detection + Semantic Segmentation Sunucusu Baslatildi")
+    print("Yayina erismek icin: http://<TINKER_IP>:5000")
     print("Galeriye erismek ici: http://<TINKER_IP>:5000/gallery")
-    print(" 'S' tuşuna basınca segment edilmiş yüz kaydedilir.")
+    print("'S' tusuna basinca segment edilmis yüz kaydedilir.")
     app.run(host="0.0.0.0", port=5000, threaded=True)
+
 
