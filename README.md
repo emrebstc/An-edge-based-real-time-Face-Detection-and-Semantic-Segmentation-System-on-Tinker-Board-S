@@ -8,6 +8,8 @@ Designed a lightweight Flask-based web streaming interface for live video visual
 
 Optimized performance for 32-bit embedded hardware and implemented real-time monitoring and key-triggered segmentation saving.
 
+It works with between min 8 fps and max 10.65 FPS. (USB 2.0 Ports support maximum of 10.65 fps)
+
 Hardware Specifications of ASUS Tinker Board S
 ----------------------------------------------
 ![Y2657193-01](https://github.com/user-attachments/assets/adfa1d30-2cc9-4f79-9123-219b78394a36)
