@@ -107,7 +107,15 @@ You may share your file to tinker board via SCP tool, for that:
 
 Examples
 --------
+<img width="1024" height="769" alt="3" src="https://github.com/user-attachments/assets/d77660e7-6153-4f17-9977-c01bd85bc670" />
+
+![segment_001](https://github.com/user-attachments/assets/56cbf0cd-0f1a-432b-a178-90763e56b8ec)
+
+
 ![segment_030](https://github.com/user-attachments/assets/da3af3ba-077a-49b5-b720-a947776dd0ca)
+
+<img width="1028" height="774" alt="2" src="https://github.com/user-attachments/assets/3f32b4f7-7e31-43c3-ae78-7d04dafeb9ba" />
+
 
 ![segment_041](https://github.com/user-attachments/assets/6af25c27-830c-492e-8ef6-6996e92464ed)
 
