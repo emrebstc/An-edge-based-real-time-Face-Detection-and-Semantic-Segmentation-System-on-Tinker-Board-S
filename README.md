@@ -105,5 +105,12 @@ You may share your file to tinker board via SCP tool, for that:
 
 6)scp -r root@<TINKERIP>:/root/YOURFILE.py C:\Users\YOURUSERNAME\Downloads
 
+Examples
+--------
+![segment_030](https://github.com/user-attachments/assets/da3af3ba-077a-49b5-b720-a947776dd0ca)
+
+![segment_041](https://github.com/user-attachments/assets/6af25c27-830c-492e-8ef6-6996e92464ed)
+
+![segment_047](https://github.com/user-attachments/assets/84c84cf2-4476-46b1-8ae0-a0d6d53f84a0)
 
 
