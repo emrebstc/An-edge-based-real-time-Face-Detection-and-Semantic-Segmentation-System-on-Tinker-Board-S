@@ -32,7 +32,9 @@ OpenCV Version: 4.6.0 (headless)
 Model	Type	Path	Description
 -----------------------------
 res10_300x300_ssd_iter_140000.caffemodel  path: /root/
+
 deploy.prototxt , path : /root/
+
 selfie_multiclass_256x256.tflite , path : /root/
 
 
